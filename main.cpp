@@ -69,10 +69,21 @@ int main()
             jana.push(customers[x]);
     }
 
-    for (int i = 0; i < CUSTnum; i++)
-    {
-        jana.pop().PrintInfo();
-    }
+    for (int i = 0; i < CUSTnum; i++) // FINALLY FIXED IT YAY
+        {
+            string Mname=" ";
+            Customer jana1 = jana.pop();
+            
+            for (int i = 0; i < MAXnum; i++)
+            {
+                if (jana1.getMID() == mechanics[i].getID())
+                    Mname= mechanics[i].getName();
+            }
+            if (Mname == " ")
+                cout << "the customer " << jana1.getName() << "'s request for appointnment has been unfortunately declined due to the unavalibality of mechanics. TRY AGAIN LATER! " << endl;
+            else
+            cout << "the customer " << jana1.GetName() << "'s apointment is at " <<  jana1.getApp().hours << ":" << jana1.getApp().min << "with the mechanic " <<Mname<< endl;
+        }
     return 0;
 }
 
