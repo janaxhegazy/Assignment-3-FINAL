@@ -82,7 +82,7 @@ int main()
             if (Mname == " ")
                 cout << "the customer " << jana1.getName() << "'s request for appointnment has been unfortunately declined due to the unavalibality of mechanics. TRY AGAIN LATER! " << endl;
             else
-            cout << "the customer " << jana1.GetName() << "'s apointment is at " <<  jana1.getApp().hours << ":" << jana1.getApp().min << "with the mechanic " <<Mname<< endl;
+            cout << "the customer " << jana1.getName() << "'s apointment is at " <<  jana1.getApp().hours << ":" << jana1.getApp().min << "with the mechanic " <<Mname<< endl;
         }
     return 0;
 }
