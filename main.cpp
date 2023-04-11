@@ -73,6 +73,7 @@ int main()
         {
             string Mname=" ";
             Customer jana1 = jana.pop();
+        
             
             for (int i = 0; i < MAXnum; i++)
             {
